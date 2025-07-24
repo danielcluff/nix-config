@@ -14,31 +14,29 @@
       # List packages installed in system profile. To search by name, run:
       # $ nix-env -qaP | grep wget
       nixpkgs.config.allowUnfree = true;
-      environment.systemPackages =
-        [ 
-          pkgs.rectangle
-          pkgs.raycast
-          pkgs.alacritty
-          pkgs.mkalias
+            environment.systemPackages = with pkgs; [ 
+                rectangle
+                raycast
+                alacritty
+                mkalias
 
-          pkgs.brave
-          pkgs.discord
-          pkgs.slack
+                brave
+                discord
+                slack
 
           # programming
-          pkgs.claude-code
-          pkgs.go
-          pkgs.nodePackages.npm
-          pkgs.nodejs_24
-          pkgs.python314
-          pkgs.uv
+                claude-code
+                vscode
+                go
+                python314
+                uv
 
           # terminal
-         pkgs.aspell
-         pkgs.aspellDicts.en
-         pkgs.bash-completion
-         pkgs.zsh-powerlevel10k
-         pkgs.openssh
+                aspell
+                aspellDicts.en
+                bash-completion
+                zsh-powerlevel10k
+                openssh
         ];
 
       homebrew = {
