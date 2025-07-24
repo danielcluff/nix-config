@@ -31,8 +31,6 @@
           pkgs.nodejs_24
           pkgs.python314
           pkgs.uv
-          pkgs.docker
-          pkgs.docker-compose
 
           # terminal
          pkgs.aspell
