@@ -33,6 +33,13 @@
           pkgs.uv
           pkgs.docker
           pkgs.docker-compose
+
+          # terminal
+         pkgs.aspell
+         pkgs.aspellDicts.en
+         pkgs.bash-completion
+         pkgs.zsh-powerlevel10k
+         pkgs.openssh
         ];
 
       homebrew = {
