@@ -27,8 +27,8 @@
 
           # programming
           pkgs.go
-          pkgs.nodePackages.npm
-          pkgs.nodejs_24
+          # pkgs.nodePackages.npm
+          # pkgs.nodejs_24
           pkgs.python314
           pkgs.uv
 
@@ -43,6 +43,7 @@
       homebrew = {
         enable = true;
         brews = [
+          "node"
           "mas"
         ];
         casks = [
