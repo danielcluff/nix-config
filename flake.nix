@@ -25,7 +25,6 @@
                 slack
 
                 # programming
-                claude-code
                 vscode
                 go
                 python314
