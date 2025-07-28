@@ -131,8 +131,8 @@
     in
     {
         # Build darwin flake using:
-        # $ darwin-rebuild build --flake .#Daniels-MacBook-Air
-        darwinConfigurations."Daniels-MacBook-Air" = nix-darwin.lib.darwinSystem {
+        # $ darwin-rebuild build --flake .#Floaty
+        darwinConfigurations."Floaty" = nix-darwin.lib.darwinSystem {
             modules = [
                 nix-homebrew.darwinModules.nix-homebrew
                 configuration
