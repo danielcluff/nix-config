@@ -27,7 +27,6 @@
                 # programming
                 vscode
                 code-cursor
-                sublime4
                 go
                 python314
                 uv
@@ -46,6 +45,7 @@
                     "mas"
                 ];
                 casks = [
+                    "sublime-text"
                     "hammerspoon"
                     "zen"
                     "iina"
