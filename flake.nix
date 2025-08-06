@@ -26,6 +26,8 @@
 
                 # programming
                 vscode
+                code-cursor
+                sublime4
                 go
                 python314
                 uv
