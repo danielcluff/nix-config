@@ -31,6 +31,9 @@
                 python314
                 uv
 
+                # media
+                davinci-resolve
+
                 # terminal
                 aspell
                 aspellDicts.en
