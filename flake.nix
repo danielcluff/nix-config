@@ -45,6 +45,7 @@
                     "mas"
                 ];
                 casks = [
+                    "ghostty"
                     "voiceink"
                     "sublime-text"
                     "hammerspoon"
