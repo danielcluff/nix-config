@@ -78,7 +78,6 @@
             users.users.daniel = {
                 home = "/Users/daniel";
                 packages = with pkgs; [
-                    nodePackages.npm
                     nodejs_24
                 ];
             };
