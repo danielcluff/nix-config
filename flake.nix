@@ -41,12 +41,8 @@
 
             homebrew = {
                 enable = true;
-                taps = [
-                    "oven-sh/bun"
-                ];
                 brews = [
                     "mas"
-                    "bun"
                 ];
                 casks = [
                     "ghostty"
@@ -83,6 +79,7 @@
                 home = "/Users/daniel";
                 packages = with pkgs; [
                     nodejs_24
+                    bun
                 ];
             };
 
