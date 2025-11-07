@@ -41,8 +41,12 @@
 
             homebrew = {
                 enable = true;
+                taps = [
+                    "oven-sh/bun"
+                ];
                 brews = [
                     "mas"
+                    "bun"
                 ];
                 casks = [
                     "ghostty"
