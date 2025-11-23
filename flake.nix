@@ -54,7 +54,8 @@
                     "the-unarchiver"
                 ];
                 masApps = {
-                    # "Slack" = 457622435;
+                    "Slack" = 803453959;
+                    "Davinci Resolve" = 571213070;
                 };
                 onActivation = {
                     cleanup = "zap";
