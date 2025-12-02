@@ -42,6 +42,7 @@
             homebrew = {
                 enable = true;
                 brews = [
+                    "ffmpeg"
                     "mas"
                 ];
                 casks = [
