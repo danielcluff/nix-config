@@ -41,9 +41,13 @@
 
             homebrew = {
                 enable = true;
+                taps = [
+                    "siderolabs/tap"
+                ];
                 brews = [
                     "ffmpeg"
                     "mas"
+                    "siderolabs/tap/talosctl"
                 ];
                 casks = [
                     "ghostty"
