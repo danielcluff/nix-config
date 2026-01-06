@@ -31,6 +31,9 @@
                 python314
                 uv
 
+                #devops
+                kubernetes-helm
+
                 # terminal
                 aspell
                 aspellDicts.en
@@ -60,7 +63,6 @@
                 ];
                 masApps = {
                     "Slack" = 803453959;
-                    "Davinci Resolve" = 571213070;
                 };
                 onActivation = {
                     cleanup = "zap";
