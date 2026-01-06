@@ -32,7 +32,9 @@
                 uv
 
                 #devops
+                kubectl
                 kubernetes-helm
+                kubeseal # for sealed secrets
 
                 # terminal
                 aspell
