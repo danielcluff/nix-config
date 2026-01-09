@@ -35,6 +35,7 @@
                 kubectl
                 kubernetes-helm
                 kubeseal # for sealed secrets
+                tailscale
                 devpod
 
                 # terminal
