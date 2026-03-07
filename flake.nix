@@ -26,7 +26,6 @@
 
                 # programming
                 vscode
-                code-cursor
                 go
                 python314
                 uv
