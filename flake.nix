@@ -127,6 +127,13 @@
             # Enable Touch ID for sudo
             security.pam.services.sudo_local.touchIdAuth = true;
 
+            programs.zsh = {
+                enable = true;
+                interactiveShellInit = ''
+                    source ${pkgs.zsh-autosuggestions}/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+                '';
+            };
+
             system = {
                 primaryUser = "daniel";
                 defaults = {
