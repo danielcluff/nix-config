@@ -23,6 +23,7 @@ export PATH="/opt/homebrew:$PATH"
 
 ## Run
 sudo darwin-rebuild switch --flake ~/nix-config
+sudo darwin-rebuild switch --flake .#Floaty
 
 
 ## Update
