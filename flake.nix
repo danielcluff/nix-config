@@ -43,6 +43,8 @@
                 bash-completion
                 zsh-powerlevel10k
                 openssh
+                starship
+		        tmux
             ];
 
             homebrew = {
@@ -131,6 +133,7 @@
                 enable = true;
                 interactiveShellInit = ''
                     source ${pkgs.zsh-autosuggestions}/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+                    eval "$(${pkgs.starship}/bin/starship init zsh)"
                 '';
             };
 
