@@ -107,10 +107,17 @@
             # Add npm global bin to PATH
             #environment.systemPath = [ "/Users/daniel/.npm-global/bin" ];
 
-            # Claude gen section. This didn't create the config file last time I ran it.
-            system.activationScripts.bunConfig.text = ''
+            # Config files for npm and bun
+            system.activationScripts.extraActivation.text = ''
+                # bun config
                 echo 'minimumReleaseAge = "7 days"' > /Users/daniel/.bunfig.toml
                 chown daniel:staff /Users/daniel/.bunfig.toml
+
+                # npm config - append if not present
+                if ! grep -q 'min-release-age' /Users/daniel/.npmrc 2>/dev/null; then
+                    echo 'min-release-age=7d' >> /Users/daniel/.npmrc
+                fi
+                chown daniel:staff /Users/daniel/.npmrc
             '';
 
             system.activationScripts.applications.text = let
