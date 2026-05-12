@@ -56,6 +56,7 @@
                     "ffmpeg"
                     "mas"
                     "siderolabs/tap/talosctl"
+                    "glslang"
                 ];
                 casks = [
                     "ghostty"
@@ -67,7 +68,7 @@
                     "the-unarchiver"
                 ];
                 masApps = {
-                    "Slack" = 803453959;
+                    # "Slack" = 803453959;
                 };
                 onActivation = {
                     cleanup = "zap";
@@ -105,6 +106,12 @@
 
             # Add npm global bin to PATH
             #environment.systemPath = [ "/Users/daniel/.npm-global/bin" ];
+
+            # Claude gen section. This didn't create the config file last time I ran it.
+            system.activationScripts.bunConfig.text = ''
+                echo 'minimumReleaseAge = "7 days"' > /Users/daniel/.bunfig.toml
+                chown daniel:staff /Users/daniel/.bunfig.toml
+            '';
 
             system.activationScripts.applications.text = let
                 env = pkgs.buildEnv {
