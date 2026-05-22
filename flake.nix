@@ -164,6 +164,11 @@
                 stateVersion = 6;
                 configurationRevision = self.rev or self.dirtyRev or null;
             };
+            nix.gc = {
+                automatic = true;
+                interval = { Weekday = 0; Hour = 2; Minute = 0; };
+                options = "--delete-older-than 30d";
+            };
             nix.settings.experimental-features = "nix-command flakes";
             nixpkgs.hostPlatform = "aarch64-darwin";
         };
