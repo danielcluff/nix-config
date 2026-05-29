@@ -145,9 +145,14 @@
 
             programs.zsh = {
                 enable = true;
+                promptInit = "";
                 interactiveShellInit = ''
                     source ${pkgs.zsh-autosuggestions}/share/zsh-autosuggestions/zsh-autosuggestions.zsh
                     eval "$(${pkgs.starship}/bin/starship init zsh)"
+
+                    # swap tab and right arrow in zsh
+                    bindkey '^I' autosuggest-accept
+                    bindkey '^[[C' expand-or-complete
                 '';
             };
 
