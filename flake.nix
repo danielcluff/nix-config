@@ -152,7 +152,7 @@
 
                     # swap tab and right arrow in zsh
                     bindkey '^I' autosuggest-accept
-                    bindkey '^[[C' expand-or-complete
+                    bindkey '^[[1;5C' expand-or-complete
                 '';
             };
 
