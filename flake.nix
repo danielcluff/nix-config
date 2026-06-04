@@ -45,6 +45,7 @@
                 openssh
                 starship
 		        tmux
+                ripgrep
             ];
 
             homebrew = {
