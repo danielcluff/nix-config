@@ -29,6 +29,7 @@
                 go
                 python314
                 uv
+                zig
 
                 #devops
                 kubectl
