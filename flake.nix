@@ -31,6 +31,12 @@
                 uv
                 zig
 
+                # containers
+                colima
+                docker
+                docker-compose
+                docker-buildx
+
                 #devops
                 kubectl
                 kubernetes-helm
