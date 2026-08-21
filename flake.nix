@@ -30,12 +30,14 @@
                 python314
                 uv
                 zig
+                pnpm
 
                 # containers
                 colima
                 docker
                 docker-compose
                 docker-buildx
+                docker-credential-helpers
 
                 #devops
                 kubectl
