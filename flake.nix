@@ -25,6 +25,8 @@
                 slack
 
                 # programming
+                git
+                git-lfs
                 vscode
                 go
                 python314
