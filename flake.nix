@@ -72,6 +72,7 @@
                 ];
                 casks = [
                     "ghostty"
+                    "codex"
                     "voiceink"
                     "sublime-text"
                     "hammerspoon"
