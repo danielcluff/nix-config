@@ -63,7 +63,7 @@
                 enable = true;
                 taps = [
                     "siderolabs/tap"
-                    "anomalyco/tap/hex"
+                    "anomalyco/tap"
                 ];
                 brews = [
                     "ffmpeg"
@@ -73,7 +73,7 @@
                 ];
                 casks = [
                     "ghostty"
-                    "hex"
+                    "anomalyco/tap/hex"
                     "codex"
                     "voiceink"
                     "sublime-text"
