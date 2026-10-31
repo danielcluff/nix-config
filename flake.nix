@@ -63,6 +63,7 @@
                 enable = true;
                 taps = [
                     "siderolabs/tap"
+                    "anomalyco/tap/hex"
                 ];
                 brews = [
                     "ffmpeg"
