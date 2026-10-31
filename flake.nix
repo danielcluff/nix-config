@@ -106,7 +106,6 @@
                 home = "/Users/daniel";
                 packages = with pkgs; [
                     nodejs_24
-                    bun
                 ];
             };
 
@@ -120,12 +119,8 @@
             # Add npm global bin to PATH
             #environment.systemPath = [ "/Users/daniel/.npm-global/bin" ];
 
-            # Config files for npm and bun
+            # Config file for npm
             system.activationScripts.extraActivation.text = ''
-                # bun config
-                echo 'minimumReleaseAge = "7 days"' > /Users/daniel/.bunfig.toml
-                chown daniel:staff /Users/daniel/.bunfig.toml
-
                 # npm config - append if not present
                 if ! grep -q 'min-release-age' /Users/daniel/.npmrc 2>/dev/null; then
                     echo 'min-release-age=7d' >> /Users/daniel/.npmrc
