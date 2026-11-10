@@ -27,6 +27,7 @@
                 # programming
                 git
                 git-lfs
+                gh
                 vscode
                 go
                 python314
